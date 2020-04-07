@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfDrawingExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDrawingExample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" FontSize="36">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" FontSize="18">
+            <MenuItem Header="_Pick an item...">
+                <MenuItem x:Name="menuDrawRectangle" Click="menuDrawRectangle_Click" Header="Draw _Rectangle"></MenuItem>
+                <MenuItem x:Name="menuDrawRedRectangle" Click="menuDrawRedRectangle_Click" Header="Draw Red Rectangle"></MenuItem>
+                <MenuItem x:Name="menuSetCircle" Click="menuSetCircle_Click" Header="Draw _Circle"></MenuItem>
+                <MenuItem x:Name="menuCheckerboard" Click="menuCheckerboard_Click" Header="Draw C_heckerboard"></MenuItem>
+                <MenuItem x:Name="menuFunky" Click="menuFunky_Click" Header="Draw _Funky"></MenuItem>
+                <MenuItem x:Name="menuLines" Click="menuLines_Click" Header="Draw _Lines"></MenuItem>
+                <MenuItem x:Name="menuText" Click="menuText_Click" Header="Draw _Text"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Canvas x:Name="canvas" Background="White"></Canvas>
+    </DockPanel>
+</Window>
